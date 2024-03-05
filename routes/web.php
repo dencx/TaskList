@@ -85,17 +85,6 @@ Route::get('tasks/{id}', function ($id) use ($tasks) {
     return view('show', ['task' => $task]);
 })->name('tasks.show');
 
-// Route::get('/xxx', function () {
-//     return 'Hello';gi
-// })->name('hello');
-
-// Route::get('/halo', function () {
-//     return redirect()->route('hello');
-// });
-
-// Route::get('/greet/{name}', function ($name) {
-//     return 'Hello ' . $name . '!';
-// });
 Route::fallback(function () {
     return '404 error';
 });
